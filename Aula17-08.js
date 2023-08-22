@@ -136,17 +136,25 @@
 
 //EXERCICIO 5
 
-const pontos = [ [2, 5, 8], [3, 9, 12], [4, 6, 10] ]
-let soma = 0
-for (let linha in pontos){
-    for (let coluna in pontos[linha]){
-        soma += pontos[linha][coluna]
-        // console.log(pontos[1][1])
-    }
-}
+// const pontos = [ [2, 5, 8], [3, 9, 12], [4, 6, 10] ]
+// let soma = 0
+// for (let linha in pontos){
+//     for (let coluna in pontos[linha]){
+//         soma += pontos[linha][coluna]
+//         // console.log(pontos[1][1])
+//     }
+// }
 
 //Quando tiver um vetor dentro de outro vetor, indicar a posição da linha e da coluna.
 
+// Criando um objeto
+ const cliente = {
+    nome: "Abc",
+    idade: 18,
+    endereco: "rua s/n"
+ }
 
-
+ const pessoas = new Object();
+ pessoas.nome = "Abc"
+ 
 
