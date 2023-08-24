@@ -124,6 +124,8 @@
 // }
 // console.log(resultado)
 
+//---------------------------------------------------------------
+
 //EXERCICIO 4
 
 // const estudantes = { alice: 18, bob: 20, carol: 19, david: 21 };
@@ -133,6 +135,8 @@
 //         console.log(`Nome: ${index} Idade: ${estudantes[index]}`)
 //     }
 // }
+
+//----------------------------------------------------------------------
 
 //EXERCICIO 5
 
