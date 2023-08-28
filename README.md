@@ -1,2 +1,2 @@
-# Turma-BackEnd
-Softex Manhã
+# Softex Manhã
+Turma Back-End
