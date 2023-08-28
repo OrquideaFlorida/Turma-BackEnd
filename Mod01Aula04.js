@@ -1,3 +1,7 @@
+
+//--------DESAFIO BLACKJACK-----------
+
+
 let carta1 = 10
 let carta2 = 11
 let soma = carta1 + carta2

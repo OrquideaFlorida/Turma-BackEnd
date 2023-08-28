@@ -1,7 +1,10 @@
-//function - Colocar o nome da função
-// Entre parênteses colocar os parâmetros da função
-// Chamar o console.log (Criar a frase a ser exibida e adicionar os parâmetros)
-// nomeDaFunção("nome do(s) parâmetro(")
+// FUNÇÕES AULA 08/08
+/*
+function - Colocar o nome da função
+ Entre parênteses colocar os parâmetros da função
+ Chamar o console.log (Criar a frase a ser exibida e adicionar os parâmetros)
+ nomeDaFunção("nome do(s) parâmetro(")
+ */
 
 
 
