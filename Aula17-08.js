@@ -1,3 +1,5 @@
+
+//-------EXCESSÕES EM JAVASCRIPT Aula 17/08----------
 // try {
 //     criticalCode();
 
@@ -163,7 +165,7 @@
  
 //----------------------------------------------
 
-//24/08
+//--------OBJETO LIVRO AULA 24/08
 
 // const livro = {
 //     titulo: "1984",
