@@ -39,41 +39,45 @@
 
 // switch (estado) {
 //     case 'MG':
-//         console.log(`O Valor total do produto para MG é R$ ${valor + (valor*0.07)}`);
+//         console.log(`O Valor da taxa para MG é R$ ${valor*0.07}, sendo o valor total: R$ ${valor + (valor*0.07)}`);
 //         break;
 //     case 'SP':
-//         console.log(`O Valor toal do produto para SP é R$ ${valor + (valor*0.12)}`);
+//         console.log(`O Valor da taxa para SP é R$ ${valor*0.012}, sendo o valor toral: R$ ${valor + (valor*0.12)}`);
 //         break;
 //     case 'RJ':
-//         console.log(`O Valor total do produto para RJ é R$ ${valor + (valor*0.15)}`);
+//         console.log(`O Valor da taxa para RJ é R$ ${valor*0.15}, sendo o valor total: R$ ${valor + (valor*0.15)}`);
+//         break;
+//     case 'MS':
+//         console.log(`O Valor da taxa para MS é R$ ${valor*0.08}, sendo o valor total: R$ ${valor + (valor*0.08)}`);
 //         break;
 //     default:
-//         console.log("Digite uma opção válida.")
+//         console.log("Digite apenas uma das opções acima (MG, SP, RJ, MS).")
 // }
 
 // --- EXERCÍCIO 4 ---
 //MOSTRAR A SOMA DOS 50 PRIMEIROS NÚMEROS PARES
 
 //FOR
-let soma = 0;
-let cont = 0;
-for (let x = 0; x <= 1000 ; x++){
-    if (x % 2 === 0){
-        soma += x;
-        cont++;
-    }
-    if (cont > 50){
-        break;
-    }
-}
-console.log(soma);
+// let soma = 0;
+// let cont = 0;
+// for (let x = 0; x <= 1000 ; x++){
+//     if (x % 2 === 0){
+//         soma += x;
+//         cont++;
+//     }
+//     if (cont > 50){
+//         break;
+//     }
+// }
+// console.log(soma);
 
 //WHILE
-// let num = 10
-// let cont = 1
-// while(num % 2 = 0 && cont <= 50){
-//     cont = cont += 1
-//     console.log(cont);
+// let soma = 0;
+// let cont = 0;
+// while(num % 2 = 0 && cont < 50){
+//     soma += x;
+//     cont++;
+//     console.log(soma);
 // }
 
 //DO-WHILE
@@ -85,3 +89,15 @@ console.log(soma);
 
 //--- EXERCÍCIO 5 ---
 //IMPRIMIR OS N PRIMEIROS NÚMEROS NATURAIS ÍMPARES
+const readline = require('readline-sync');
+const n = readline.questionInt('Escolha um número: ');
+
+let cont = 0;
+if (n % 2 !== 0){
+    while (cont < n){
+        cont ++n
+        console.log(`${cont}...`);
+    }
+}else{
+    console.log('O número não é ímpar')
+}
