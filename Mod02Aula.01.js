@@ -95,7 +95,7 @@ const n = readline.questionInt('Escolha um número: ');
 let cont = 0;
 if (n % 2 !== 0){
     while (cont < n){
-        cont ++n
+        cont ++
         console.log(`${cont}...`);
     }
 }else{
