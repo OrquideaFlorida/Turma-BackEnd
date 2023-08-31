@@ -54,7 +54,7 @@
 //         console.log("Digite apenas uma das opções acima (MG, SP, RJ, MS).")
 // }
 
-// --- EXERCÍCIO 4 ---
+// --- EXERCÍCIO 4 --- PARA RESOLVER
 //MOSTRAR A SOMA DOS 50 PRIMEIROS NÚMEROS PARES
 
 //FOR
@@ -69,16 +69,24 @@
 //         break;
 //     }
 // }
-// console.log(soma);
+// console.log(`A soma dos 50 primeiros números é ${soma}`);
 
 //WHILE
 // let soma = 0;
 // let cont = 0;
-// while(num % 2 = 0 && cont < 50){
-//     soma += x;
-//     cont++;
-//     console.log(soma);
+// let num = 0;
+// while (num <= 1000){
+//     if (num % 2 === 0){
+//         num++;
+//         soma += num;
+//         cont++;
+//     }
+//     if (cont > 50){
+//         break
+//     }
 // }
+// console.log(soma);
+
 
 //DO-WHILE
 // do {
@@ -89,15 +97,53 @@
 
 //--- EXERCÍCIO 5 ---
 //IMPRIMIR OS N PRIMEIROS NÚMEROS NATURAIS ÍMPARES
-const readline = require('readline-sync');
-const n = readline.questionInt('Escolha um número: ');
+// const readline = require('readline-sync');
+// const n = readline.questionInt('Escolha um número: ');
+// console.log('Contando...');
 
-let cont = 0;
-if (n % 2 !== 0){
-    while (cont < n){
-        cont ++
-        console.log(`${cont}...`);
-    }
-}else{
-    console.log('O número não é ímpar')
-}
+// let cont = 1;
+// if (n % 2 !== 0){
+//     while (cont <= n){
+//         console.log(`${cont}...`);
+//         cont += 2
+//     }
+// }else{
+//     console.log('O número não é ímpar');
+// }
+
+//--- EXERCICIO 6 ---
+//QUANTO O ENCANADOR VAI RECEBER?
+// const readline = require('readline-sync');
+// const dias = readline.questionInt('Quantos dias foram trabalhados? ');
+
+// let taxa = (30 * dias) * 0.08
+// let valor = (30 * dias) - taxa
+
+// console.log(`O valor que o encanador vai receber por ${dias} dias, será R$ ${valor}`);
+
+//--- EXERCICIO 7 --- PARA RESOLVER
+//HORÁRIO DE INÍCIO E DURAÇÃO EM SEGUNDOS DE UMA EXPERIÊNCIA BIOLÓGICA
+
+
+
+//--- EXERCICIO 8 --- PARA RESOLVER
+//CALCULAR O TOTAL DE HORAS TRABALHADAS E O SALÁRIO EM 12 MESES
+// const readline = require('readline-sync');
+// const normal = readline.questionInt('Quantas horas trabalhadas? ');
+// const extra = readline.questionInt('Quantas horas extras? ');
+
+
+
+
+//--- EXERCICIO 9 ---
+//LER TRÊS NÚMEROS E MOSTRÁ-LOS EM ORDEM CRESCENTE
+// const readline = require('readline-sync');
+// const n1 = readline.questionInt('Digite o primeiro número: ');
+// const n2 = readline.questionInt('Digite o segundo número: ');
+// const n3 = readline.questionInt('Digite o terceiro número: ');
+
+// console.log([n1, n2, n3].sort());
+
+
+//--- EXERCICIO 10 ---
+//CONVERSÃO DE TEMPERATURAS
