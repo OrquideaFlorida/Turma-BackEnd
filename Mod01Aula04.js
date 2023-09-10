@@ -102,8 +102,143 @@ if (typeof categ === "boolean"){
 
 // ESTRUTURA DE DECISÃO -SWITCH-
 //1) VERIFIQUE O DIA DA SEMANA COM BASE EM UM NÚMERO DE 1 A 7
+// let dia = '1'
+// switch (dia) {
+//     case '1':
+//         console.log("O dia escolhido é Domingo!");
+//         break;
+//     case '2':
+//         console.log("O dia escolhido é Segunda-feira!");
+//         break;
+//     case '3':
+//         console.log("O dia escolhido é Terça-feira!");
+//         break;
+//     case '4':
+//         console.log("O dia escolhido é Quarta-feira!");
+//         break;
+//     case '5':
+//         console.log("O dia escolhido é Quinta-feira!");
+//         break;
+//     case '6':
+//         console.log("O dia escolhido é Sexta-feira!");
+//         break;
+//     case '7':
+//         console.log("O dia escolhido é Sábado!");
+//         break;
+//     default:
+//         console.log("Escolha um número apenas de 1 a 7");
+//         break;
+// }
+
+//2) CONVERTA UM NÚMERO DE MÊS AO SEU NOME CORRESPONDENTE
+
+// let mes = '6'
+// switch (mes) {
+//     case '1':
+//         console.log("Você escolheu Janeiro!");
+//         break;
+//     case '2':
+//         console.log("Você escolheu Fevereiro!");
+//         break;
+//     case '3':
+//         console.log("Você escolheu Março!");
+//         break;
+//     case '4':
+//         console.log("Você escolheu Abril!");
+//         break;
+//     case '5':
+//         console.log("Você escolheu Maio!");
+//         break;
+//     case '6':
+//         console.log("Você escolheu Junho!");
+//         break;
+//     case '7':
+//         console.log("Você escolheu Julho!");
+//         break;
+//     case '8':
+//         console.log("Você escolheu Agosto!");
+//         break;
+//     case '9':
+//         console.log("Você escolheu Setembro!");
+//         break;
+//     case '10':
+//         console.log("Você escolheu Outubro!");
+//         break;
+//     case '11':
+//         console.log("Você escolheu Novembro!");
+//         break;
+//     case '12':
+//         console.log("Você escolheu Dezembro!");
+//         break;
+//     default:
+//         console.log("Escolha um número apenas entre 1 e 12");
+//         break;
+// }
+
+//3) EXIBA UMA MENSAGEM DE ACORDO COM O ESTADO CIVIL: "SOLTEIRO", "CASADO", "DIVORCIADO" OU "OUTRO"
+// let eCivil = 'a'
+// switch (eCivil) {
+//     case 'a':
+//         console.log("Você é Solteiro(a)!");
+//         break;
+//     case 'b':
+//         console.log("Você é Casado(a)!");
+//         break;
+//     case 'c':
+//         console.log("Você é Divorciado(a)!");
+//         break;
+//     case 'd':
+//         console.log("Outros");
+//         break;
+//     default:
+//         console.log("Escolha entre: a, b, c ou d");
+//         break;
+// }
+
+//4) EXIBA UMA MENSAGEM DEPENDENDO DO TIPO DE ANIMAL: "CACHORRO", "GATO", "PÁSSARO" OU "OUTRO"
+// let pet = 'z'
+// switch (pet){
+//     case 'w':
+//         console.log("O CACHORRO faz 'Au, Au!'");
+//         break;
+//     case 'x':
+//         console.log("O GATO faz 'Miau!'");
+//         break;
+//     case 'y':
+//         console.log("O PÁSSARO faz 'fiu, fiu!'");
+//         break;
+//     case 'z':
+//         console.log("'OUTRO'??? Que bicho é esse???");
+//         break;
+//     default:
+//         console.log("Escolha somente uma das opções: w, x, y ou z");
+// }
+
+//5) Calcule o valor de uma operação matemática com base em um operador: soma, subtração, multiplicação ou divisão
+let n1 = 10
+let n2 = 2
+let op = 'x'
+
+switch (op){
+    case '+':
+        console.log(`O resultado da SOMA é: ${n1 + n2}`);
+        break;
+    case '-':
+        console.log(`O resultado da SUBTRAÇÃO é: ${n1 - n2}`);
+        break;
+    case 'x':
+        console.log(`O resultado da MULTIPLICAÇÃO é: ${n1 * n2}`);
+        break;
+    case '/':
+        console.log(`O resultado da DIVISÃO é: ${n1 / n2}`);
+        break;
+    default:
+        console.log("Escolha apenas entre +, -, x ou /");
+        break;
+}
 
 //--------DESAFIO BLACKJACK-----------
+//APRIMORAR NO BLACKJACK.JS
 
 /*
 let carta1 = 10
