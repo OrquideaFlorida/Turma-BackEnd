@@ -6,25 +6,27 @@ let carta2 = readline.questionInt('Escolha a segunda carta de 1 a 10: ');
 
 let soma = carta1 + carta2
 
-if (soma > 21) {
-    console.log(`Total de pontos: ${soma}. Estourou! Você Perdeu.`);
-}else if (soma === 21){
-    console.log(`Você fez ${soma}! Você ganhou!!!`);
-}else {
+while (soma < 21) {
     console.log(`Você fez ${soma} pontos. Abaixo de 21. Deseja continuar? `);
     let decid = readline.question('Escolha [S] ou [N]: ');
         switch(decid){
             case 'S':
-                //FAZER COM QUE SE VOLTE PARA ADICIONAR MAIS CARTAS
+                let cartas = readline.questionInt('Escolha mais uma carta (1 a 10): ');
+                soma = soma + cartas
                 break;
             case 'N':
-                //console.log(`Com ${soma} pontos adquiridos, você pode vencer!`)
-                //loop = false
+                console.log(`Com ${soma} pontos adquiridos, você pode vencer!`)
+                //FAZER COM QUE O WHILE SE ENCERRE AO OPTAR POR 'N'
                 break;
             default:
                 console.log("Escolha apenas S ou N");
                 break;
         }
+}
+if (soma === 21){
+    console.log(`Você fez ${soma}! Você ganhou!!!`);
+}else {
+    console.log(`Total de pontos: ${soma}. Estourou! Você Perdeu.`);
 }
 
 //DESAFIO 2: COM A BANCA ADVERSÁRIA
