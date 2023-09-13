@@ -31,7 +31,7 @@ switch (candidato){
         console.log('Você votou em Branco. Deseja finalizar? [S/N]');
         break;
     default:
-        console.log('Digite as opções acima corretamente.')
+        console.log('Digite as opções acima corretamente.');
 
 }
 
