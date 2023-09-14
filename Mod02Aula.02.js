@@ -26,7 +26,7 @@ let loop = true;
 let matriculaBusca;
 
 while (loop) {
-    console.clear(); //VAI LIMPAR A TELA PARA MOSTRAR O MENUN NOVAMENTE
+    console.clear(); //VAI LIMPAR A TELA PARA MOSTRAR O MENU NOVAMENTE
 // CRIANDO UM MENU PARA LISTAR TODOS OS ALUNOS
 console.log("===== CADASTRO DE ALUNO ====");
 console.log("============ MENU ==========");
