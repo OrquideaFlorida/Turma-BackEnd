@@ -17,6 +17,9 @@ while (loop){
 
     let candidato = readline.questionInt('Digite o número do candidato: ');
 
+    if (candidato != Infinity){
+        console.log("Digite somente números!");
+    }
         switch (candidato){
             case 889:
                 votoX += 1
@@ -35,24 +38,29 @@ while (loop){
                 console.log('Você votou em Branco.');
                 break;
             default:
-                if (typeof candidato != Infinity){
-                    console.log('Digite somente números!');
-                } else {
                     nulo += 1
                     console.log('O seu voto será anulado.');
-                    break;
-                }      
+                    break;      
         }
    
    let cont = readline.question("Deseja finalizar? [S/N]: ");
-   if (cont = 'N'){
-        loop = true;
-    }
-    if (cont = 'S'){
-        loop = false;
-    } else {
-        console.log("Digite apenas uma opção: [S ou N]");
-    }
-      
+   switch (cont){
+        case 'S':
+            console.log("Contando votos...");
+            console.log("... ... ... ... ...");
+            loop = false;
+            break;
+        case 'N':
+            loop = true;
+            break;
+        default:
+            console.log("Digite apenas uma opção [S/N]");
+            break;
+   } 
+   
 }
-console.log(`Total de votos para o Candidato_X: ${votoX}, ${votoY}, ${votoZ}`);
+//Math.max() ==> RETORNA O MAIOR DE UM OU MAIS NÚMEROS
+console.log(`O vencedor é o ${vencedor}, com ${Math.max(votoX, votoY, votoZ)} de votos`);
+console.log(`Foram apurados ${nulo} votos nulos.`);
+
+console.log(`Total de votos para cada Candidato: Candidato_X: ${votoX}, Candidato_Y: ${votoY}, Candidato_Z: ${votoZ}`);
