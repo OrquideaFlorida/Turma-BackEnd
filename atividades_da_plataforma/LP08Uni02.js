@@ -17,9 +17,9 @@ while (loop){
 
     let candidato = readline.questionInt('Digite o número do candidato: ');
 
-    if (candidato != Infinity){
-        console.log("Digite somente números!");
-    }
+    // if (candidato != Infinity){
+    //     console.log("Digite somente números!");
+    // }
         switch (candidato){
             case 889:
                 votoX += 1
@@ -60,7 +60,7 @@ while (loop){
    
 }
 //Math.max() ==> RETORNA O MAIOR DE UM OU MAIS NÚMEROS
-console.log(`O vencedor é o ${vencedor}, com ${Math.max(votoX, votoY, votoZ)} de votos`);
+console.log(`O vencedor é o X, com ${Math.max(votoX, votoY, votoZ)} de votos`);
 console.log(`Foram apurados ${nulo} votos nulos.`);
 
 console.log(`Total de votos para cada Candidato: Candidato_X: ${votoX}, Candidato_Y: ${votoY}, Candidato_Z: ${votoZ}`);
