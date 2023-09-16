@@ -43,7 +43,7 @@ while (loop){
                     break;      
         }
    
-   let cont = readline.question("Deseja finalizar? [S/N]: ");
+   let cont = readline.question("Deseja FINALIZAR A VOTAÇÃO? [S/N]: ");
    switch (cont){
         case 'S':
             console.log("Contando votos...");
@@ -59,8 +59,19 @@ while (loop){
    } 
    
 }
+
+if (Math.max(votoX, votoY, votoZ) === votoX){
+    var eleito = "Candidato_X";
+}
+if (votoY > votoX && votoY > votoZ){
+    var eleito = "Candidato_Y";
+} 
+if (Math.max(votoX, votoY, votoZ) === votoZ){
+    var eleito = "Candidato_Z"
+}
+
 //Math.max() ==> RETORNA O MAIOR DE UM OU MAIS NÚMEROS
-console.log(`O vencedor é o X, com ${Math.max(votoX, votoY, votoZ)} de votos`);
+console.log(`O ${eleito} será eleito, com o total de ${Math.max(votoX, votoY, votoZ)} votos.`);
 console.log(`Foram apurados ${nulo} votos nulos.`);
 
 console.log(`Total de votos para cada Candidato: Candidato_X: ${votoX}, Candidato_Y: ${votoY}, Candidato_Z: ${votoZ}`);
