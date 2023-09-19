@@ -1,6 +1,3 @@
-
-//PROJETO 3.0
-
 //const readline = require("readline-sync"); // Importa a biblioteca readline-sync para interagir com o usuário via console.
 import readline from "readline-sync"
 
@@ -437,7 +434,7 @@ while (true) {
         case 0:
             // Encerra o programa e exibe uma mensagem de encerramento.
             console.log("Encerrando o programa.");
-            return;
+            //return;
         default:
             // Se o usuário escolher uma opção inválida, exibe uma mensagem de erro e pausa a execução.
             console.log("Erro: Opção inválida.");
