@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
   },
   "name": "turma-backend",
   "description": "Turma Back-End",
