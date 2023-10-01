@@ -18,8 +18,9 @@ switch (op) {
     case '/':
         console.log(num1 / num2);
         if (num1 % num2 > 0){
-            let res = num1 % num2;
-            console.log(`O resto da divisão é: ${res}`);
+            //let res = num1 % num2;
+            num1 %= num2
+            console.log(`O resto da divisão é: ${num1}`);
         }
         break;
     default:
