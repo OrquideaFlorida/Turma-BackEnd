@@ -1,3 +1,5 @@
+// AULA 28/09
+
 //CRIAR UMA VARIÁVEL COM TIPO DE DADOS:
 // let valor: number = 50;
 // let nada: null;
@@ -6,7 +8,7 @@
 // let bichos: Array<string> = ["Gato", "Cachorro", "Papagaio"];
 // let objeto: object = {Aluna: "Orquídea"};
 
-import { createSemanticDiagnosticsBuilderProgram } from "typescript";
+//import { createSemanticDiagnosticsBuilderProgram } from "typescript";
 
 // console.log(bichos);
 
@@ -55,18 +57,123 @@ import { createSemanticDiagnosticsBuilderProgram } from "typescript";
 
 //--------------------------------------------------------
 
-enum TipoDeUsuario {
-    Administrador,
-    Usuario,
-    Convidado,
-}
+// enum TipoDeUsuario {
+//     Administrador,
+//     Usuario,
+//     Convidado,
+// }
 
-function verificarPermissao(usuario: TipoDeUsuario): void {
-    if (usuario === TipoDeUsuario.Administrador){
-        //
-    } else {
-        //
-    }
-}
+// function verificarPermissao(usuario: TipoDeUsuario): void {
+//     if (usuario === TipoDeUsuario.Administrador){
+//         //
+//     } else {
+//         //
+//     }
+// }
 
 //------------------------------------------------------------
+
+// AULA 03/10
+
+// //FUNÇÕES TYPESCRIPT - (: void) SEM RETORNO E SEM PARÂMETRO
+// function nomeFuncao(): void {
+//     console.log("Minha primeira função.");
+// }
+// nomeFuncao();
+
+// //FUNÇÃO COM RETORNO E SEM PARÂMETROS
+// function nomefuncao02(): number | string {
+//     //return "Minha segunda função";
+//     return 10
+// }
+
+// //FUNÇÃO SEM RETORNO E COM PARÂMETROS
+// function funcao03(nome: string): void {
+//     console.log("Bom dia " + nome + "!");
+// }
+// funcao03("Orquídea");
+
+// //FUNÇÃO COM RETORNO E COM PARÂMETROS
+// function funcao04(num1: number, num2: number): number {
+//     return num1 + num2;
+// }
+// console.log(funcao04(10.1, 7.3));
+
+//REFAZER OS EXERCÍCIOS DO SLIDE 5 LP EM TYPESCRIPT
+
+//SLIDE 24
+// --QUESTÃO 01--
+function saudacao(): void{
+    console.log("Olá Mundo!");
+}
+saudacao();
+
+// -- QUESTÃO 02 --
+function dobro(num: number): number{
+    return num * 2
+}
+console.log(dobro(50));
+
+// -- QUESTÃO 03 --
+function mostrarNumeros(numi: number, numf: number): void{
+    while (numi <= numf){
+        console.log(numi);
+        numi++
+    }
+}
+console.log(mostrarNumeros(10, 30));
+
+// -- QUESTÃO 04 --
+function verificarPar(numero: number){
+    if (numero % 2 === 0){
+        console.log(`O número ${numero} é par!`);
+    } else {
+        console.log(`O número ${numero} é ímpar!`);
+    }
+}
+console.log(verificarPar(25));
+
+// -- QUESTÃO 05 --
+// function imprimirLista(lista){
+//     for (let valor = 0; valor < lista.length; valor++){
+//         console.log(lista[valor]);
+//     }
+// }
+// let pets = ["Cachorro", "Gato", "Papagaio"]
+// imprimirLista(pets);
+
+let array: Array<string> = ["Cachorro", "Gato", "Jabuti"];
+
+function imprimirLista(lista: Array<string>): void{
+    console.log(lista);
+}
+imprimirLista(array);
+
+//SLIDE 25
+//-- QUESTÃO 01 --
+let media: Array<number> = [10, 8.5, 7];
+
+function calcularMedia(array: Array<number>): number{
+    let soma = 0;
+    for (let i = 0; i < array.length; i++){
+        soma += array[i]
+    }
+    const media = soma / array.length;
+    return media;
+}
+console.log(calcularMedia(media));
+
+// -- QUESTÃO 02 --
+// let maior: Array<number> = [5, 10, 15];
+
+// function maiorNumero(ordem: Array<number>): void{
+//     console.log(ordem);
+// }
+// maiorNumero(maior);
+
+
+//SLIDE 30
+// -- QUESTÃO 01 --
+
+//SLIDE 31
+// -- QUESTÃO 01
