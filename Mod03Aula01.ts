@@ -164,16 +164,38 @@ function calcularMedia(array: Array<number>): number{
 console.log(calcularMedia(media));
 
 // -- QUESTÃO 02 --
-// let maior: Array<number> = [5, 10, 15];
+const numMaiorNumero: Array<number> = [10, 8.5, 7]
 
-// function maiorNumero(ordem: Array<number>): void{
-//     console.log(ordem);
-// }
-// maiorNumero(maior);
-
+function maiorNumero(array : Array<number>){
+    console.log(Math.max(...array));
+}
+maiorNumero(numMaiorNumero);
 
 //SLIDE 30
 // -- QUESTÃO 01 --
+// function contarVogais(palavra: string){
+//     let totalVogal = 0;
+//     let vogais = ['a', 'e', 'i', 'o', 'u'];
+//     let i;
+//     for (i = 0; i < palavra.length; i++ ) {
+//         if(vogais.indexOf(palavra[i]) != -1) {
+//             totalVogal++;
+//         }
+//     }
+//     console.log(`O total de vogais da ${palavra} é ${totalVogal}.`);
+// }
+
+// contarVogais("Matheus");
 
 //SLIDE 31
 // -- QUESTÃO 01
+// function imprimirTabuada(numero: number){
+//     let num = readline.questionInt("Insira um número: ");
+//     let tabuada = " ";
+//     for (var count=1; count<=10 ; count++){
+//         tabuada += `\n ${num} x ${count} = ${num*count}`;
+//     }
+//     console.log(tabuada);
+// }
+
+// imprimirTabuada(5);
