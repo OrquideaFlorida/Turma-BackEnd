@@ -30,6 +30,7 @@ console.log(`Meu carro é um ${meuCarro.marca} ${meuCarro.modelo} fabricado em $
 meuCarro.acelerar(); // Chamando o método acelerar
 
 //-- Exercício 1 --
+//CRIE UMA CLASSE PESSOA, COM OS ATRIBUTOS NOME, IDADE E E-MAIL
 class Pessoa {
     nome: string;
     idade: number;
@@ -55,13 +56,22 @@ class Aluno extends Pessoa{
     }
     
 }
-let aAluno = new Aluno(12345);
-
+let aAluno = new Aluno("Orquídea", 30, "orquidea@yahoo.com.br", 123.4);
+console.log(`Meu nome é ${aPessoa.nome}, tenho ${aPessoa.idade}, anos e meu e-mail é ${aPessoa.e_mail} e Matrícula: ${aAluno.matricula}`)
 
 //-- Exercício 3 --
+//CRIE UMA CLASSE RETÂNGULO COM OS ATRIBUTOS ALTURA E LARGURA E MÉTODOS PARA
+//CALCULAR A ÁREA E OPERÍMETRO:
 
 
 //-- Exercício 4 --
+//CRIE UMA CLASSE CÍRCULO COM O ATRIBUTO RAIO E MÉTODOS PARA CALCULAR A ÁREA E
+//A CIRCUNFERÊNCIA:
 
 
 //-- Exercício 5 --
+//CRIE UMA CLASSE CONTA BANCÁRIA, COM OS ATRIBUTOS SALDO E numeroConta E MÉTODOS
+// PARA DEPOSITAR, SACAR E VERIFICAR O SALDO
+
+
+// -- Exercício 6 --
