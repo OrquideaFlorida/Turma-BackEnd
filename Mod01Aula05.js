@@ -129,7 +129,16 @@ function contarVogais(quantas){
 contarVogais("Orquidea"); //Revisar a contagem de vogais
 
 //-- QUESTÃO 8 --
-
-function imprimirTabuada(){
-    
+//const readline = require('readline-sync');
+import readline from "readline-sync"
+function imprimirTabuada(num){
+    let n1 = readline.questionInt("A tabuada do número: ");
+    let tabuada = " ";
+    for(var n2 = 1; n2 <= 10; n2++){
+        tabudada += `\n ${n1} x ${n2} = ${n1 * n2}`;
+    }
+    console.log(tabuada);
 }
+imprimirTabuada(5);
+
+//-- QUESTÃO 9--
