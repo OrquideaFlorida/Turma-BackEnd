@@ -81,14 +81,55 @@ function - Colocar o nome da função
 
 //for: a primeira declaração de variável, depois a condição e depois a interação
 
-// function imprimirLista(lista){
-//     for(let valor = 0; valor < lista.length; valor++){
-//         console.log(lista[valor])
-//     }
-// }
-// let sabores = ["chocolate", "morango"]
+function imprimirLista(lista){
+    for(let valor = 0; valor < lista.length; valor++){
+        console.log(lista[valor]);
+    }
+}
+let sabores = ["chácomlate", "morânguio", "leite compensado", "frocks"];
 
-// imprimirLista(sabores)
+imprimirLista(sabores);
 
+// --QUESTÃO 6--
 
+let medias = [10, 20, 2.5, 7];
 
+function calcularMedia(numeros){
+    let soma = 0;
+    for(let i = 0; i < numeros.length; i++){
+        soma += numeros[i];
+    }
+    const medias = soma / numeros.length;
+    return medias;
+}
+
+console.log(calcularMedia(medias));
+
+// --QUESTÃO 6--
+
+let maior = [10, 20, 2.5, 7];
+
+function maiorNumero(mAior){
+    console.log(Math.max(...mAior));
+}
+maiorNumero(maior);
+
+// --QUESTÃO 7--
+
+function contarVogais(quantas){
+    let vogais = ['a', 'e', 'i', 'o', 'u'];
+    let contVogal = 0;
+    for(let j = 0; j < quantas.length; j++){
+        if (vogais.indexOf(quantas[j]) != -1){
+            contVogal++;
+        }
+    }
+    console.log(`O nome ${quantas}, contém ${contVogal} vogais.`);
+}
+contarVogais("Orquidea"); //Revisar a contagem de vogais
+
+//-- QUESTÃO 8 --
+
+function imprimirTabuada(){
+    
+}

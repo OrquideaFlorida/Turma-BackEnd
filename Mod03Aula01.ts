@@ -112,7 +112,7 @@ saudacao();
 function dobro(num: number): number{
     return num * 2
 }
-console.log(dobro(50));
+dobro(50);
 
 // -- QUESTÃO 03 --
 function mostrarNumeros(numi: number, numf: number): void{
@@ -121,7 +121,7 @@ function mostrarNumeros(numi: number, numf: number): void{
         numi++
     }
 }
-console.log(mostrarNumeros(10, 30));
+mostrarNumeros(10, 30);
 
 // -- QUESTÃO 04 --
 function verificarPar(numero: number){
@@ -131,7 +131,7 @@ function verificarPar(numero: number){
         console.log(`O número ${numero} é ímpar!`);
     }
 }
-console.log(verificarPar(25));
+verificarPar(25);
 
 // -- QUESTÃO 05 --
 // function imprimirLista(lista){
@@ -142,34 +142,34 @@ console.log(verificarPar(25));
 // let pets = ["Cachorro", "Gato", "Papagaio"]
 // imprimirLista(pets);
 
-let array: Array<string> = ["Cachorro", "Gato", "Jabuti"];
+// let array: Array<string> = ["Cachorro", "Gato", "Jabuti"];
 
-function imprimirLista(lista: Array<string>): void{
-    console.log(lista);
-}
-imprimirLista(array);
+// function imprimirListas(lista: Array<string>): void{
+//     console.log(lista);
+// }
+// imprimirListas(array);
 
 //SLIDE 25
 //-- QUESTÃO 01 --
-let media: Array<number> = [10, 8.5, 7];
+// let media: Array<number> = [10, 8.5, 7];
 
-function calcularMedia(array: Array<number>): number{
-    let soma = 0;
-    for (let i = 0; i < array.length; i++){
-        soma += array[i]
-    }
-    const media = soma / array.length;
-    return media;
-}
-console.log(calcularMedia(media));
+// function calcularMedias(array: Array<number>): number{
+//     let soma = 0;
+//     for (let i = 0; i < array.length; i++){
+//         soma += array[i]
+//     }
+//     const media = soma / array.length;
+//     return media;
+// }
+// console.log(calcularMedias(media));
 
 // -- QUESTÃO 02 --
-const numMaiorNumero: Array<number> = [10, 8.5, 7]
+// const numMaiorNumero: Array<number> = [10, 8.5, 7]
 
-function maiorNumero(array : Array<number>){
-    console.log(Math.max(...array));
-}
-maiorNumero(numMaiorNumero);
+// function maiorNumero(array : Array<number>){
+//     console.log(Math.max(...array));
+// }
+// maiorNumero(numMaiorNumero);
 
 //SLIDE 30
 // -- QUESTÃO 01 --
